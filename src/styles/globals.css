@@ -21,4 +21,14 @@
     @apply
     hover:underline cursor-pointer
   }
+
+  .page {
+    @apply
+    bg-white
+  }
+
+  .google-icon {
+    @apply
+    w-8 h-8 m-1 ml-2 mr-2 rounded-sm bg-white
+  }
 }
