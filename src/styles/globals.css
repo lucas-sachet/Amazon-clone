@@ -16,4 +16,9 @@
     focus:outline-none focus:ring-1 focus:ring-yellow-500
     active:from-yellow-500;
   }
+
+  .footer-effect {
+    @apply
+    hover:underline cursor-pointer
+  }
 }
