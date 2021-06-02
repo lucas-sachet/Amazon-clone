@@ -1,10 +1,10 @@
 const Footer = () => {
   return (
     <footer className='w-full bg-amazon_blue-light'>
-      <div className='flex items-center h-10 bg-gray-600 opacity-90 hover:bg-gray-500'>
+      <div className='flex items-center h-10 bg-gray-600 opacity-90 hover:bg-gray-500 animate-pulse delay-150'>
         <a className='flex justify-center text-white text-sm w-full' href="#nav-top">Back to top</a>
       </div>
-      <div className='grid sm:grid-cols-2 lg:grid-cols-4 mx-auto pt-12 pb-12 max-w-screen-lg border-b-2 border-gray-400'>
+      <div className='grid sm:grid-cols-2 lg:grid-cols-4 mx-auto pt-12 pb-12 max-w-screen-lg'>
         <div className='flex items-center flex-col text-xs texth text-gray-200 m-2 leading-6'>
           <div className='flex w-1/2 flex-col'>
             <span className='text-base text-white font-bold mb-1'>Get to Know Us</span> 
@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='flex items-center justify-center h-32'>
+      <div className='flex items-center justify-center h-32 border-t border-gray-400'>
         <img className='w-36 h-10 cursor-pointer' src="/images/amazon-logo.png" alt="logo" />
       </div>
     </footer>
