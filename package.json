@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "stripe": "stripe listen --forward-to localhost:3000/api/webhook"
   },
   "dependencies": {
     "@heroicons/react": "^1.0.1",
@@ -15,6 +16,7 @@
     "axios": "^0.21.1",
     "firebase": "^8.6.3",
     "firebase-admin": "^9.9.0",
+    "micro": "^9.3.4",
     "next": "10.2.3",
     "next-auth": "^3.24.0",
     "react": "17.0.2",
