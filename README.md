@@ -10,12 +10,15 @@ Using the [FakeStore API](https://fakestoreapi.com/) to simulate the products, a
 
 </br>
 
-# Responsive
+<h2  align="center">Responsive</h2>
 
-![md](https://github.com/lucas-sachet/Amazon-clone/blob/main/public/images/3.png)
-![sm](https://github.com/lucas-sachet/Amazon-clone/blob/main/public/images/2.png)
-![mb](https://github.com/lucas-sachet/Amazon-clone/blob/main/public/images/mob.png)
-
+<p align="center">
+  <img src="https://github.com/lucas-sachet/Amazon-clone/blob/main/public/images/3.png" width="700" title="medium">
+  <br>
+  <img src="https://github.com/lucas-sachet/Amazon-clone/blob/main/public/images/2.png" width="500" alt="small">
+  <br>
+  <img src="https://github.com/lucas-sachet/Amazon-clone/blob/main/public/images/mob.png" width="300" alt="mobile">
+</p>
 
 </br>
 
