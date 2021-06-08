@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className='w-full bg-amazon_blue-light'>
-      <div className='flex items-center h-10 bg-gray-600 opacity-90 hover:bg-gray-500 animate-pulse delay-150'>
+      <div className='flex items-center h-10 bg-gray-600 opacity-90 animate-pulse delay-150'>
         <a className='flex justify-center text-white text-sm w-full' href="#nav-top">Back to top</a>
       </div>
       <div className='grid sm:grid-cols-2 lg:grid-cols-4 mx-auto pt-12 pb-12 max-w-screen-lg'>

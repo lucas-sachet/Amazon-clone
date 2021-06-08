@@ -44,7 +44,7 @@ const Header = () => {
             </p>
             <p className='font-extrabold md:text-sm'>Account & Lists</p>
           </div>
-          <div className='link'>
+          <div onClick={() => router.push('/orders')} className='link'>
             <p>Returns</p>
             <p className='font-extrabold md:text-sm'>& Orders</p>
           </div>
@@ -79,3 +79,13 @@ const Header = () => {
 }
 
 export default Header
+
+export async function getServerSideProps(context) {
+  const session = await getSession(context)
+  
+  return { 
+    props: {
+      session
+    }
+  }
+}
