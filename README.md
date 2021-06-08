@@ -1,4 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1  align="center">Amazon Clone</h1>
+</br>
+
+This project is a clone of main intention(ecommerce) of Amazon app, it was build mainly with Next.JS/React.JS and Redux, using [firebase](https://firebase.google.com/) and [Next Auth](https://next-auth.js.org/) for login authentication with a custom page file, [Tailwind](https://tailwindcss.com/) to add the css directly on the `class` of each HTML tailwind looks for mobile first, so the site is entirely responsive, with it saving time on `.css` files.
+Using the [FakeStore API](https://fakestoreapi.com/) to simulate the products, and process payments with [Stripe](https://stripe.com/) and [StripeCLI](https://stripe.com/docs/stripe-cli)
+
+</br>
+
+![gif](https://github.com/lucas-sachet/Amazon-clone/blob/main/public/videos/amzclone.gif)
+
+</br>
+
+# Responsive
+
+![md](https://github.com/lucas-sachet/Amazon-clone/blob/main/public/images/3.png)
+![sm](https://github.com/lucas-sachet/Amazon-clone/blob/main/public/images/2.png)
+![mb](https://github.com/lucas-sachet/Amazon-clone/blob/main/public/images/mob.png)
+
+
+</br>
 
 ## Getting Started
 
@@ -9,6 +28,14 @@ npm run dev
 # or
 yarn dev
 ```
+Then you need to configure the ```.env.local``` file and add:
+- Google auth (need a project on google console).
+- Stripe for the checkout page.
+- Stripe CLI if you want to simulate the full transaction.
+
+Create a firebase project and get the permissions json to the project root folder.
+
+</br>
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -25,10 +52,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
