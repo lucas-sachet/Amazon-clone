@@ -1,9 +1,10 @@
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { StarIcon } from '@heroicons/react/solid'
 import Currency from 'react-currency-formatter'
 import { useDispatch } from 'react-redux'
 import { addToBasket } from '../slices/basketSlice'
+import CartPopUp from './CartPopUp'
 
 const MIN_RATING = 1;
 const MAX_RATING = 5;
@@ -16,6 +17,9 @@ const Product = ({ id, title, price, description, category, image }) => {
   );
 
   const [hasPrime] = useState(Math.random() < 0.5);
+  const [popUp, setPopUp] = useState(false);
+
+  
 
   const addItemToBasket = () => {
     const product = {
@@ -33,7 +37,14 @@ const Product = ({ id, title, price, description, category, image }) => {
     dispatch(addToBasket(product))
   }
 
+  useEffect(() => {
+    setTimeout(() => {
+      setPopUp(false)
+    }, 3000)
+  }, [addItemToBasket])
+
   return (
+    <>
     <div className='relative flex flex-col m-5 bg-white z-30 p-10'>
       <p className='absolute top-2 right-2 italic text-xs text-gray-400'>{category}</p>
 
@@ -59,8 +70,14 @@ const Product = ({ id, title, price, description, category, image }) => {
           <p className='text-xs text-gray-500'>FREE Next-day Delivery</p>
         </div>
       )}
-      <button onClick={addItemToBasket} className='mt-auto button'>Add to Basket</button>
+      <button onClick={function(event){addItemToBasket(); setPopUp(true)}} className='mt-auto button'>Add to Basket</button>
     </div>
+    {/* PopUp */}
+      <CartPopUp trigger={popUp}>
+        <h4 className='text-sm'>{title}</h4>
+        <p className='text-xs text-white'>added to basket</p>
+      </CartPopUp>
+    </>
   )
 }
 

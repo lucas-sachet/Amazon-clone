@@ -16,9 +16,11 @@ const Header = () => {
   const items = useSelector(selectItems)
 
   return (
+    <>
+    <div id='nav-top'></div>
     <header className='sticky top-0 z-50'>
       {/* Top nav */}
-      <div id='nav-top' className='flex items-center bg-amazon_blue p-1 flex-grow py-2'>
+      <div className='flex items-center bg-amazon_blue p-1 flex-grow py-2'>
         <div className='mt-2 flex item-center flex-grow sm:flex-grow-0'>
           <Image 
             onClick={() => router.push('/')}
@@ -75,6 +77,7 @@ const Header = () => {
         <p className='link hidden lg:inline-flex'>Health & Personal Care</p>
       </div>
     </header>
+    </>
   )
 }
 

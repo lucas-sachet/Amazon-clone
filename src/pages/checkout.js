@@ -69,7 +69,10 @@ const Checkout = () => {
         </div>
 
         {/* Right */}
-        <div className='flex flex-col bg-white p-10 shadow-md'>
+        {items.length === 0 
+        ? "" 
+        : (
+          <div className='flex flex-col bg-white p-10 shadow-md'>
           {items.length > 0 &&(
             <>
               <h2 className='whitespace-nowrap'>
@@ -90,6 +93,7 @@ const Checkout = () => {
             </>
           )}
         </div>
+        )}
       </main>
     </div>
   )
